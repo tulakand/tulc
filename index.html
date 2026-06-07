@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TULC | Creative Designer & Visual Artist</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Portofolio kreatif TULC - Desainer Visual & Seniman Grafis. Spesialisasi dalam identitas brand, desain editorial, brutalist web design, dan seni eksperimental monokrom.">
+  <meta name="keywords" content="desain grafis, portofolio, brutalist, grunge, hitam putih, tulc, zine, poster design, ui ux">
+  <meta name="author" content="TULC">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="TULC | Creative Designer & Visual Artist">
+  <meta property="og:description" content="Portofolio kreatif TULC dengan estetika brutalist-grunge monokrom.">
+  <meta property="og:image" content="profile.png">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Syne (bold/brutalist), Space Grotesk (body/sans), Courier Prime (mono/typewriter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Custom Grunge Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+  <!-- Noise Overlay Texture -->
+  <div class="noise-overlay"></div>
+
+  <!-- Scanlines Effect (Subtle retro CRT feel) -->
+  <div class="scanlines"></div>
+
+  <!-- Glitch Grid Background -->
+  <div class="grid-background"></div>
+
+  <!-- Custom Tape Decoration Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <a href="#" class="logo-text">TULC // ARCHIVE</a>
+      <nav class="nav-links">
+        <a href="#about" class="nav-link-item">TENTANG</a>
+        <a href="#projects" class="nav-link-item">PROYEK</a>
+        <a href="#skills" class="nav-link-item">KEAHLIAN</a>
+        <a href="#contact" class="nav-link-item nav-contact-btn">KONTAK</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="mobile-close" id="menuClose" aria-label="Close Menu">
+      <i data-lucide="x"></i>
+    </button>
+    <a href="#about" class="mobile-link">TENTANG</a>
+    <a href="#projects" class="mobile-link">PROYEK</a>
+    <a href="#skills" class="mobile-link">KEAHLIAN</a>
+    <a href="#contact" class="mobile-link">KONTAK</a>
+  </div>
+
+  <main class="main-content">
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-grid">
+        <div class="hero-text-container">
+          <div class="stamp-badge">EXPERIMENTAL CREATIVE SYSTEM v1.0</div>
+          <h1 class="hero-title">
+            <span class="glitch-word" data-text="TULC">TULC</span>
+            <span class="glitch-word text-outline" data-text="CREATIVE">CREATIVE</span>
+          </h1>
+          <div class="role-selector-container">
+            <span class="role-static">// CREATING: </span>
+            <span class="role-typing" id="typingText"></span>
+            <span class="cursor-blink">_</span>
+          </div>
+          <p class="hero-desc" id="heroDesc">
+            <!-- Dynamically populated from data.js -->
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              LIHAT KARYA <i data-lucide="arrow-right"></i>
+            </a>
+            <a href="#" id="resumeLink" class="btn btn-secondary" target="_blank">
+              UNDUH CV [PDF] <i data-lucide="download"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image-container">
+          <div class="profile-frame">
+            <!-- Duct tape decor top-left -->
+            <div class="tape-decor tape-tl"></div>
+            <!-- Duct tape decor bottom-right -->
+            <div class="tape-decor tape-br"></div>
+            <img src="profile.png" alt="TULC Portrait" class="profile-img" id="profileImg">
+            <div class="halftone-overlay"></div>
+          </div>
+          <div class="frame-tag">// IMG_REF: 404_TULC</div>
+        </div>
+      </div>
+
+      <!-- Marquee Section -->
+      <div class="marquee-wrapper">
+        <div class="marquee-content">
+          <span>CREATIVE DISRUPTION // BRUTALIST AESTHETIC // VISUAL ANARCHY // BRAND IDENTITY // ZINE CULTURE // EDITORIAL DESIGN // GENERATIVE CODE //&nbsp;</span>
+          <span>CREATIVE DISRUPTION // BRUTALIST AESTHETIC // VISUAL ANARCHY // BRAND IDENTITY // ZINE CULTURE // EDITORIAL DESIGN // GENERATIVE CODE //&nbsp;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="section-header">
+        <h2 class="section-title">01. TENTANG & BIOGRAFI</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="about-content-grid">
+        <div class="about-bio-box">
+          <div class="bio-stamp">BIOGRAPHY_ARCHIVE</div>
+          <p class="bio-text" id="bioText">
+            <!-- Dynamic bio data -->
+          </p>
+          <div class="manifesto-box">
+            <h4>MANIFESTO SAYA:</h4>
+            <blockquote>
+              "Kerapian adalah ilusi kenyamanan. Desain terbaik lahir dari ketidaksempurnaan yang disengaja, tekstur yang kasar, dan kejujuran medium. "Di tengah dunia digital yang terlalu steril, saya memilih estetika yang mentah dan bersuara lantang." — TULC
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="timeline-box">
+          <div class="timeline-stamp">TIMELINE_RECORDS</div>
+          <div class="timeline-list" id="experienceTimeline">
+            <!-- Dynamically populated from data.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="section-header">
+        <h2 class="section-title">02. KEAHLIAN & TEKNOLOGI</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="skills-grid" id="skillsContainer">
+        <!-- Dynamically populated from data.js -->
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="section-header">
+        <h2 class="section-title">03. ARSIP KARYA & PROYEK</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Filters -->
+      <div class="filter-wrapper">
+        <div class="filter-tape-shadow"></div>
+        <div class="filter-container" id="filterContainer">
+          <button class="filter-btn active" data-filter="all">SEMUA_ARSIP</button>
+          <button class="filter-btn" data-filter="branding">BRANDING</button>
+          <button class="filter-btn" data-filter="editorial">EDITORIAL_ZINE</button>
+          <button class="filter-btn" data-filter="code">DIGITAL_CODE</button>
+        </div>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Dynamically populated from data.js -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-header">
+        <h2 class="section-title">04. HUBUNGI KREATOR</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <div class="stamp-box">WARNING: HIGH CONTENT STIMULUS</div>
+          <h3 class="contact-pitch">Mari Berkolaborasi!</h3>
+          <p class="contact-intro">
+            Apakah Anda memiliki proyek liar yang butuh visual berani? Label musik yang butuh merchandise mentah? Atau proyek web yang bosan dengan template bersih? Kirimkan pesan sekarang juga.
+          </p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i data-lucide="mail"></i>
+              <span>hello@rakasatria.xyz</span>
+            </div>
+            <div class="contact-item">
+              <i data-lucide="instagram"></i>
+              <span>@raka.satria</span>
+            </div>
+          </div>
+          <div class="stamp-graphic">
+            <div class="stamp-circle">
+              <span>EST. 2026 // RAWFMT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <div class="tape-decor tape-tr"></div>
+          <form class="grunge-form" id="contactForm">
+            <div class="form-group">
+              <label for="name" class="form-label">[NAMA_PENGIRIM]</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Masukkan nama Anda..." required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">[SUREL_EMAIL]</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="surel@domain.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">[SUBJEK_PESAN]</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Subjek kolaborasi..." required>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">[PESAN_UTAMA]</label>
+              <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tuliskan ide proyek Anda secara detail di sini..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              KIRIM PESAN <i data-lucide="mail"></i>
+            </button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p class="copyright-text">&copy; 2026 TULC. HAK CIPTA DILINDUNGI. ESTETIKA DIKONTROL.</p>
+        <p class="footer-ref">[REF: MONOCHROME-GRUNGE-LAYOUT-SYS]</p>
+      </div>
+      <div class="footer-right" id="socialsFooter">
+        <!-- Dynamically populated from data.js -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
